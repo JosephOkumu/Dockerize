@@ -1,9 +1,9 @@
 # Use the official Golang image to create a build stage
-FROM golang:1.20 AS builder
+FROM golang:1.22.5 AS builder
 
 WORKDIR /app
 
-COPY go.mod go.sum ./
+COPY go.mod ./
 
 RUN go mod download
 
@@ -13,7 +13,7 @@ COPY . .
 # Build the Go app
 RUN go build -o main .
 
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 
 # Set the current Working Directory inside the container
 WORKDIR /app
@@ -22,8 +22,9 @@ WORKDIR /app
 COPY --from=builder /app/main .
 
 COPY static /app/static
-COPY template /app/template
+COPY templates /app/templates
 COPY web /app/web
+COPY banners /app/banners
 
 # Expose port 8080 to the outside world.
 EXPOSE 8080
