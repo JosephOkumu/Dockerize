@@ -1,4 +1,4 @@
-# Ascii-Art-Web-Dockerize
+# Dockerize-Web-AsciiArt
 ## Overview
 This project demonstrates the usage of Docker for containerization of our Ascii Art Web project. It includes a Dockerfile for creating a Docker image, from which a Container can be run from a sample of that image. Metadata is applied to Docker objects, and unused objects are managed to avoid unnecessary resource consumption. 
 ## Documentation
@@ -10,7 +10,7 @@ To run this program, download and install the latest version of Go from [here](h
 ### Usage
 1. Clone this repository on to the terminal by using the following command:
 ```bash
-git clone https://learn.zone01kisumu.ke/git/josotieno/ascii-art-dockerize
+git clone https://github.com/JosephOkumu/Dockerize-Web-AsciiArt.git
 ```
 2. Navigate into the ascii-art-web directory by using the command:
 ```bash
@@ -83,9 +83,8 @@ Pull requests are welcome where users of this program are allowed to contribute 
 
 For major changes, please open an issue first to discuss what you would like to change.
 ## Authors
-[josotieno](https://learn.zone01kisumu.ke/git/josotieno/)
+[JosephOkumu](https://github.com/JosephOkumu)
 
-[kada](https://learn.zone01kisumu.ke/git/kada/)
 
 ## Licence
 [MIT](https://choosealicense.com/licenses/mit/)
