@@ -16,6 +16,13 @@ git clone https://learn.zone01kisumu.ke/git/josotieno/ascii-art-dockerize
 ```bash
 cd ascii-art-dockerize
 ```
+    - You can skip step 3 and 4 by typing the following commands on the terminal:
+```bash
+chmod +x deploy.sh
+```
+```bash
+./deploy.sh
+``` 
 3. Build a sample Docker image by running the following command:
 ```bash
 docker build -t your-docker-image:latest .
